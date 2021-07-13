@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - PickUp
+  - SpaceObject
+  - Shot
+  - Boss
+  - BossMinion
+  - Missile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - PlayerShot
+  - Enemy
+  - EnemyShot
+  - PickUps
+  - UiButtons
+  - BossMinion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 421307911
+    locked: 0
+  - name: SpaceObject
+    uniqueID: 1008991705
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemies
+    uniqueID: 162682539
+    locked: 0
+  - name: Shoot
+    uniqueID: 1638481589
+    locked: 0
+  - name: Player
+    uniqueID: 2981273039
+    locked: 0
+  - name: explosion
+    uniqueID: 758456419
+    locked: 0
