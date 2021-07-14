@@ -13,6 +13,8 @@ public class ButtonAds : MonoBehaviour, IUnityAdsListener
     private string gameId = "null";
 #elif UNITY_ANDROID
     private readonly string gameId = AdsController.GameIdAndroid;
+#else
+    private readonly string gameId = "null";
 #endif
 
     Button myButton;
@@ -20,6 +22,7 @@ public class ButtonAds : MonoBehaviour, IUnityAdsListener
 
     private void Start()
     {
+        return;
 #if !UNITY_WEBGL
         myButton = GetComponent<Button>();
 
@@ -38,6 +41,7 @@ public class ButtonAds : MonoBehaviour, IUnityAdsListener
     // Implement a function for showing a rewarded video ad:
     private void ShowRewardedVideo()
     {
+        return;
 #if !UNITY_WEBGL
         Advertisement.Show(myPlacementId);
 #endif
@@ -46,6 +50,7 @@ public class ButtonAds : MonoBehaviour, IUnityAdsListener
     // Implement IUnityAdsListener interface methods:
     public void OnUnityAdsReady(string placementId)
     {
+        return;
         // If the ready Placement is rewarded, activate the button: 
         if (placementId == myPlacementId)
         {
@@ -55,6 +60,7 @@ public class ButtonAds : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
+        return;
         // Define conditional logic for each ad completion status:
         if (showResult == ShowResult.Finished)
         {

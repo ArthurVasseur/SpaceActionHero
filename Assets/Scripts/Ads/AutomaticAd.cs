@@ -25,6 +25,7 @@ namespace Ads
         }
         private void Start()
         {
+            return;
 #if !UNITY_WEBGL
             Advertisement.AddListener(this);
             Advertisement.Initialize(gameId, AdsController.TestMode);
@@ -34,6 +35,7 @@ namespace Ads
         // Implement a function for showing a rewarded video ad:
         public void ShowRewardedVideo()
         {
+            return;
 #if !UNITY_WEBGL
             GameManager.SetGamePause(true);
             Advertisement.Show(MyPlacementId);
@@ -43,12 +45,14 @@ namespace Ads
         // Implement IUnityAdsListener interface methods:
         public void OnUnityAdsReady(string placementId)
         {
+            return;
             // If the ready Placement is rewarded, activate the button: 
             AdsReady = placementId == MyPlacementId;
         }
 
         public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
         {
+            return;
             // Define conditional logic for each ad completion status:
             if (showResult == ShowResult.Finished)
             {
